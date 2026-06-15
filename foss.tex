@@ -176,7 +176,6 @@ natbib,
 
               \vfill
         \item Composability.
-
               \note[item]{%
                       Free software is often text-based.
                       Since so many use this common format, it can be relatively painless to chain multiple tools together into a single workflow.
@@ -185,10 +184,8 @@ natbib,
               \vfill
 
         \item Customizability.
-
               \note[item]{%
-                      Given how permissive many open source tools are, it's possible (and often expected!
-                      ) for you to customize the tool to your own needs.
+                      Given how permissive many open source tools are, it's possible (and often expected) for you to customize the tool to your own needs.
                   }
 
               \vfill
@@ -210,6 +207,14 @@ natbib,
         \item FOSS tools are often not as polished as their proprietary counterparts.
               \note[item]{
                       FOSS tools are also more subject to becoming ``abandonware'' as maintaining them is time-consuming—and often thankless—work.
+                  }
+
+              \vfill
+
+        \item Security concerns.
+              \note[item]{%
+                      While many open-source projects are well-maintained, their accessibility to the public does leave them at risk of being used by malicious actors.
+                      You should only use tools from trustworthy sources!
                   }
 
               \vfill
@@ -273,6 +278,10 @@ natbib,
               \vfill
 
         \item There is often a choice between an \textit{integrated development environment} (IDE) and a text editor.
+
+              \vfill
+
+        \item Open source text editors: VSCode (new school), Vi(m) and Emacs (\textit{very} old school).
 
               \vfill
     \end{itemize}
@@ -360,6 +369,23 @@ natbib,
     \end{columns}
 \end{frame}
 
+\begin{frame}[<+->]
+    \frametitle{Composability Again}
+    \begin{itemize}
+        \item The tools mentioned so far are not mutually exclusive!
+
+              \vfill
+
+        \item These tools have specific purposes, but can be chained together to form a powerful workflow.
+
+              \vfill
+
+              \begin{exampleblock}{Solving a Math Problem}
+                  The expanded form of \( (x-3)^5 \) is \dots
+              \end{exampleblock}
+    \end{itemize}
+\end{frame}
+
 \subsection{Publicizing}
 
 \begin{frame}[<+->]
@@ -386,26 +412,36 @@ natbib,
     }
 
     \vfill
-  \end{frame}
+\end{frame}
 
-  \begin{frame}[<+->]
+\begin{frame}[<+->]
     \frametitle{Literate Programming}
     \begin{itemize}
-    \item Work or results that depend on computer analysis can be shared using Jupyter Notebooks.
+        \item Work or results that depend on computer analysis can be shared using Jupyter Notebooks.
+              \note[item]{%
+                      Other tools include Quarto and Typst.
+                  }
 
-      \vfill
+              \vfill
 
-    \item Sharing code and a narrative is often more instructive than just sharing the code itself.
+        \item Sharing code and a narrative is often more instructive than just sharing the code itself.
+              See: \href{https://gwosc.org/tutorials/}{gravity wave notebooks}.
+              \note[item]{%
+                      Notebooks can also be hosted via Google Colab for interactivity.
+                  }
 
-      \vfill
+              \vfill
     \end{itemize}
-  \end{frame}
+\end{frame}
 
 \begin{frame}
     \frametitle{Licensing Your Work}
     If you are going to share your work, you should specify a license that outlines the following:
     \begin{itemize}
         \item<2-> how your work can be modified and shared.
+              \note<2->[item]{%
+                      GitHub will actually prompt you to provide a license.
+                  }
 
               \vfill
 
@@ -413,6 +449,7 @@ natbib,
               \note<3->[item]{In particular, can it be used in proprietary software?}
 
               \vfill
+
     \end{itemize}
 
     \onslide<4->{%
@@ -420,27 +457,26 @@ natbib,
         To walk you through the process of choosing a license, you can use tools such as \href{https://choosealicense.com/}{https://choosealicense.com/}.
     \end{alertblock}
     }
-\end{frame}
-\begin{frame}
-    A new test \( x^2 \)
+  \end{frame}
 
-    \begin{example}
-        A wonderful example
-    \end{example}
+  \section{Conclusion}
 
-    \begin{exampleblock}{Example}
-        Example!
-    \end{exampleblock}
-    \begin{theorem}
-        A wonderful theorem.
-    \end{theorem}
-\end{frame}
+  \begin{frame}[<+->]
+    \frametitle{Conclusion}
+    \begin{itemize}
+    \item Open source tools can form the basis of a powerful workflow.
 
-\begin{frame}{Alert}
-    \begin{alertblock}{A test of alerts}
-        ALERT
-    \end{alertblock}
-\end{frame}
+      \vfill
+
+    \item Despite their utility, these tools often take longer to learn and are not as immediately intuitive as their proprietary counterparts.
+
+      \vfill
+
+    \item You need to decide if they are appropriate for your project!
+
+      \vfill
+    \end{itemize}
+  \end{frame}
 
 \begin{frame}[allowframebreaks]
     \printbibliography%
