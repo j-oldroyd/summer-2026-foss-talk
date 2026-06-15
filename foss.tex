@@ -4,6 +4,8 @@ hyperref={colorlinks, citecolor=blue},
 \usepackage{unicode-math}
 \usepackage{pgfplots}
 \usepackage{listings}
+\usepackage{qrcode}
+
 % The code below is adapted from the style given in the following Overleaf article:
 % https://www.overleaf.com/learn/latex/Code_listing
 % Colors for syntax highlighting
@@ -505,6 +507,16 @@ natbib,
 
 \begin{frame}[allowframebreaks]
     \printbibliography%
+\end{frame}
+
+\begin{frame}
+    \frametitle{Presentation Repository}
+    \begin{center}
+        \hypersetup{%
+          urlcolor=black,
+        }
+        \qrcode[height=2in]{https://github.com/j-oldroyd/summer-2026-foss-talk}
+    \end{center}
 \end{frame}
 \end{document}
 
