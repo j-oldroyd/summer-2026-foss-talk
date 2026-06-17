@@ -1,6 +1,4 @@
-\documentclass[%
-hyperref={colorlinks, citecolor=blue},
-]{beamer}
+\documentclass{beamer}
 \usepackage{unicode-math}
 \usepackage{pgfplots}
 \usepackage{listings}
@@ -68,8 +66,10 @@ CharacterVariant={3, 6}, % varepsilon/varphi defaults
 
 \usetheme{moloch}
 
-\definecolor{wvwcorange}{HTML}{F05123}
-\definecolor{wvwcgray}{HTML}{949CA1}
+\definecolor{wvwcorange}{cmyk}{0, 0.84, 1, 0}
+\definecolor{wvwcgray}{cmyk}{0.05, 0, 0, 0.45}
+\definecolor{wvwcblack}{cmyk}{0.4, 0.4, 0.4, 1}
+\definecolor{wvwccomp}{HTML}{23C2F0} % complementary to wvwcorange, for links
 \definecolor{lightorange}{RGB}{255, 240, 230}
 \definecolor{lightgray}{RGB}{240, 240, 240}
 
@@ -84,7 +84,10 @@ CharacterVariant={3, 6}, % varepsilon/varphi defaults
   progressbar fg=wvwcorange,
   frametitle bg=wvwcorange,
   standout bg=wvwcorange,
+  alerted text=wvwcorange,
 }
+
+\setbeamercolor{section title}{fg=wvwcorange}
 
 % Alert Block
 \setbeamercolor{block title alerted}{fg=wvwcorange,bg=lightorange}
@@ -270,7 +273,7 @@ natbib,
 
 \begin{frame}
     \frametitle{Python Code for Statistics}
-    \lstinputlisting[caption={\href{https://seaborn.pydata.org/examples/layered_bivariate_plot.html}{Example Python code} for statistical visualization}, label=list:data-visualization]{stats_example.py}
+    \lstinputlisting[caption={\textcolor{wvwccomp}{\href{https://seaborn.pydata.org/examples/layered_bivariate_plot.html}{Example Python code}} for statistical visualization}, label=list:data-visualization]{stats_example.py}
   \end{frame}
 
   \begin{frame}
@@ -434,7 +437,7 @@ natbib,
     \frametitle{Sharing Your Work}
     Platforms for distributing work:
     \begin{itemize}
-        \item \href{https://www.github.com}{GitHub}
+        \item \textcolor{wvwccomp}{\href{https://www.github.com}{GitHub}}
               \note[item]{GitHub is owned by Microsoft, but allows some free storage.
                       Beware of AI training!
                   }
@@ -467,7 +470,7 @@ natbib,
               \vfill
 
         \item Sharing code and a narrative is often more instructive than just sharing the code itself.
-              See: \href{https://gwosc.org/tutorials/}{gravity wave notebooks}.
+              See: \textcolor{wvwccomp}{\href{https://gwosc.org/tutorials/}{gravity wave notebooks}}.
               \note[item]{%
                       Notebooks can also be hosted via Google Colab for interactivity.
                   }
@@ -496,7 +499,7 @@ natbib,
 
     \onslide<4->{%
     \begin{alertblock}{Choosing a License}
-        To walk you through the process of choosing a license, you can use tools such as \href{https://choosealicense.com/}{https://choosealicense.com/}.
+        To walk you through the process of choosing a license, you can use tools such as \textcolor{wvwccomp}{\href{https://choosealicense.com/}{https://choosealicense.com/}}.
     \end{alertblock}
     }
 \end{frame}
